@@ -1,0 +1,44 @@
+version: "3.1"
+
+# Intents define all possible user inputs the bot can understand
+intents:
+  - greet
+  - goodbye
+  - request_coding_courses
+  - provide_positive_feedback
+  - provide_negative_feedback
+  - show_enrollments
+  - enroll_course
+
+# Slots store conversation context and user preferences
+slots:
+  experience_level:
+    type: text
+    mappings:
+    - type: custom
+  coding_interest:
+    type: text
+    mappings:
+    - type: custom
+
+# Templates for bot's responses
+responses:
+  utter_greet:
+    - text: "Hey! 👋 Welcome to your personalized learning assistant."
+
+  utter_ask_experience:
+    - text: "What area of coding interests you most? Web development, data science, mobile apps, or something else?"
+
+  utter_ask_level:
+    - text: "Are you a beginner or do you have some coding experience?"
+
+  utter_learning_recommendations:
+    - text: "Great! Let me find some personalized learning resources for you."
+
+  utter_goodbye:
+    - text: "Goodbye! Keep learning and coding! 💻"
+
+# Custom actions that require complex logic
+actions:
+  - action_provide_learning_recommendations
+  - action_show_enrollments
