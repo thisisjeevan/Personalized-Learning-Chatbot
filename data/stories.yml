@@ -1,0 +1,60 @@
+version: "3.1"
+
+# Training stories define conversation flows
+stories:
+# Complete conversation paths with different user feedback scenarios
+- story: learning path with positive feedback
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_experience
+  - intent: request_coding_courses
+  - action: action_provide_learning_recommendations
+  - intent: provide_positive_feedback
+  - action: action_provide_learning_recommendations
+
+# Complete conversation flow with negative feedback
+- story: learning path with negative feedback
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_experience
+  - intent: request_coding_courses
+  - action: action_provide_learning_recommendations
+  - intent: provide_negative_feedback
+  - action: action_provide_learning_recommendations
+
+# Basic greeting flow
+- story: learning path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_experience
+
+# Direct recommendation request
+- story: provide recommendations
+  steps:
+  - intent: request_coding_courses
+  - action: action_provide_learning_recommendations
+
+# Handle standalone feedback
+- story: handle positive feedback
+  steps:
+  - intent: provide_positive_feedback
+  - action: action_provide_learning_recommendations
+
+- story: handle negative feedback
+  steps:
+  - intent: provide_negative_feedback
+  - action: action_provide_learning_recommendations
+
+# Add these new stories to your existing stories.yml
+- story: show enrollments
+  steps:
+  - intent: show_enrollments
+  - action: action_show_enrollments
+
+- story: enroll in course
+  steps:
+  - intent: enroll_course
+  - action: action_provide_learning_recommendations

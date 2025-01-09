@@ -1,0 +1,74 @@
+version: "3.1"
+
+nlu:
+# Training examples for basic interactions
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+
+# Training examples for course-related interactions
+- intent: request_coding_courses
+  examples: |
+    - I want to learn data science
+    - Interested in data science courses
+    - I'm a beginner in data science
+    - Help me start with data science
+    - Recommend data science learning paths
+    - I want to learn web development
+    - Mobile app development resources
+    - Python programming courses
+    - Interested in coding
+    - I want to learn programming
+    - beginner and data science
+    - I want to learn about AI
+    - I'm a beginner in Artificial Intelligence
+
+# Training examples for feedback handling
+- intent: provide_positive_feedback
+  examples: |
+    - Helpful recommendations
+    - These recommendations are helpful
+    - Thanks for the suggestions
+    - Great recommendations
+    - Perfect, exactly what I needed
+
+# Exit conversation examples
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - exit
+
+# Examples of negative feedback from users
+- intent: provide_negative_feedback
+  examples: |
+    - Not very helpful recommendations
+    - These courses aren't what I'm looking for
+    - The suggestions weren't useful
+    - These recommendations are useless
+
+# Add these new intents to your existing nlu.yml
+- intent: show_enrollments
+  examples: |
+    - show my courses
+    - what courses am I enrolled in
+    - show my enrollments
+    - list my courses
+    - what am I learning
+    - display my courses
+    - show enrolled courses
+
+- intent: enroll_course
+  examples: |
+    - I want to enroll
+    - sign me up
+    - enroll me in the course
+    - join the course
+    - register me
+    - I want to take this course
+    - sign up for the course

@@ -1,0 +1,15 @@
+version: "3.1"
+# Rules define absolute conversation patterns that should always be followed
+rules:
+# Rule to initiate conversation with greeting and experience question
+- rule: Always respond to greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_experience
+
+# Rule to handle conversation ending
+- rule: Say goodbye anytime user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
