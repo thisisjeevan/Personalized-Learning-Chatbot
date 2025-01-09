@@ -1,0 +1,391 @@
+{
+  "users": {
+    "01e41ddc655b43b98038415bb04d3d08": {
+      "enrolled_courses": [
+        "1"
+      ],
+      "progress": {
+        "1": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T21:57:59.830361"
+        }
+      }
+    },
+    "2b0b016aeadb4f4499a2a149c9453ff9": {
+      "enrolled_courses": [
+        "2",
+        "3"
+      ],
+      "progress": {
+        "2": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:00:55.766992"
+        },
+        "3": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:02:46.433758"
+        }
+      }
+    },
+    "487108a793f94171aacbab321fd9d498": {
+      "enrolled_courses": [
+        "4",
+        "5"
+      ],
+      "progress": {
+        "4": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:16:30.644309"
+        },
+        "5": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:16:54.370601"
+        }
+      }
+    },
+    "a900b9a8fdfa4ba687e587452680922f": {
+      "enrolled_courses": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "progress": {
+        "6": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:29:34.036053"
+        },
+        "7": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:30:02.549463"
+        },
+        "8": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:30:22.979330"
+        },
+        "9": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:30:47.189547"
+        }
+      }
+    },
+    "3e9c9699e9c348b2a8005d3fe346f48f": {
+      "enrolled_courses": [
+        "10",
+        "11"
+      ],
+      "progress": {
+        "10": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:35:45.565777"
+        },
+        "11": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-18T22:36:34.919901"
+        }
+      }
+    },
+    "8e41014d43994ff3ba13fe0c2ce2e2b9": {
+      "enrolled_courses": [
+        "12",
+        "13"
+      ],
+      "progress": {
+        "12": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-19T19:15:54.861519"
+        },
+        "13": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-19T19:21:53.423065"
+        }
+      }
+    },
+    "default": {
+      "enrolled_courses": [
+        "14",
+        "15",
+        "16"
+      ],
+      "progress": {
+        "14": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-19T22:28:17.986511"
+        },
+        "15": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-19T22:33:45.116888"
+        },
+        "16": {
+          "status": "enrolled",
+          "completed_materials": [],
+          "enrolled_at": "2024-12-19T22:36:49.421947"
+        }
+      }
+    }
+  },
+  "courses": {
+    "1": {
+      "name": "Data Science for Beginners",
+      "description": "A curated learning path for beginners in data science",
+      "materials": [
+        {
+          "name": "Coursera Python for Everybody",
+          "url": "https://www.coursera.org/specializations/python"
+        },
+        {
+          "name": "DataCamp Introduction to Python",
+          "url": "https://www.datacamp.com/courses/intro-to-python-for-data-science"
+        }
+      ],
+      "created_at": "2024-12-18T21:57:59.828363"
+    },
+    "2": {
+      "name": "Data Science for Beginners",
+      "description": "A curated learning path for beginners in data science",
+      "materials": [
+        {
+          "name": "Coursera Python for Everybody",
+          "url": "https://www.coursera.org/specializations/python"
+        },
+        {
+          "name": "DataCamp Introduction to Python",
+          "url": "https://www.datacamp.com/courses/intro-to-python-for-data-science"
+        }
+      ],
+      "created_at": "2024-12-18T22:00:55.754034"
+    },
+    "3": {
+      "name": "Web Development for Beginners",
+      "description": "A curated learning path for beginners in web development",
+      "materials": [
+        {
+          "name": "freeCodeCamp Web Development",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/"
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn"
+        }
+      ],
+      "created_at": "2024-12-18T22:02:46.417794"
+    },
+    "4": {
+      "name": "Data Science for Beginners",
+      "description": "A curated learning path for beginners in data science",
+      "materials": [
+        {
+          "name": "Coursera Python for Everybody",
+          "url": "https://www.coursera.org/specializations/python"
+        },
+        {
+          "name": "DataCamp Introduction to Python",
+          "url": "https://www.datacamp.com/courses/intro-to-python-for-data-science"
+        }
+      ],
+      "created_at": "2024-12-18T22:16:30.635327"
+    },
+    "5": {
+      "name": "Web Development for Beginners",
+      "description": "A curated learning path for beginners in web development",
+      "materials": [
+        {
+          "name": "freeCodeCamp Web Development",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/"
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn"
+        }
+      ],
+      "created_at": "2024-12-18T22:16:54.365483"
+    },
+    "6": {
+      "name": "Data Science for Beginners",
+      "description": "A curated learning path for beginners in data science",
+      "materials": [
+        {
+          "name": "Coursera Python for Everybody",
+          "url": "https://www.coursera.org/specializations/python"
+        },
+        {
+          "name": "DataCamp Introduction to Python",
+          "url": "https://www.datacamp.com/courses/intro-to-python-for-data-science"
+        }
+      ],
+      "created_at": "2024-12-18T22:29:34.027072"
+    },
+    "7": {
+      "name": "Web Development for Beginners",
+      "description": "A curated learning path for beginners in web development",
+      "materials": [
+        {
+          "name": "freeCodeCamp Web Development",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/"
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn"
+        }
+      ],
+      "created_at": "2024-12-18T22:30:02.540481"
+    },
+    "8": {
+      "name": "Artificial Intelligence for Beginners",
+      "description": "A curated learning path for beginners in artificial intelligence",
+      "materials": [],
+      "created_at": "2024-12-18T22:30:22.974340"
+    },
+    "9": {
+      "name": "Mobile Apps for Beginners",
+      "description": "A curated learning path for beginners in mobile apps",
+      "materials": [],
+      "created_at": "2024-12-18T22:30:47.184020"
+    },
+    "10": {
+      "name": "Web Development for Beginners",
+      "description": "A curated learning path for beginners in web development",
+      "materials": [
+        {
+          "name": "freeCodeCamp Web Development",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/"
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn"
+        },
+        {
+          "name": "The Odin Project",
+          "url": "https://www.theodinproject.com/"
+        }
+      ],
+      "created_at": "2024-12-18T22:35:45.557805"
+    },
+    "11": {
+      "name": "Artificial Intelligence for Beginners",
+      "description": "A curated learning path for beginners in artificial intelligence",
+      "materials": [
+        {
+          "name": "Fast.ai - Practical Deep Learning",
+          "url": "https://www.fast.ai/"
+        },
+        {
+          "name": "Coursera Machine Learning Specialization",
+          "url": "https://www.coursera.org/specializations/machine-learning-introduction"
+        },
+        {
+          "name": "DeepLearning.AI",
+          "url": "https://www.deeplearning.ai/"
+        },
+        {
+          "name": "Google AI Education",
+          "url": "https://ai.google/education/"
+        }
+      ],
+      "created_at": "2024-12-18T22:36:34.910926"
+    },
+    "12": {
+      "name": "Data Science for Beginners",
+      "description": "A curated learning path for beginners in data science",
+      "materials": [
+        {
+          "name": "Coursera Python for Everybody",
+          "url": "https://www.coursera.org/specializations/python"
+        },
+        {
+          "name": "DataCamp Introduction to Python",
+          "url": "https://www.datacamp.com/courses/intro-to-python-for-data-science"
+        }
+      ],
+      "created_at": "2024-12-19T19:15:54.854538"
+    },
+    "13": {
+      "name": "Web Development for Beginners",
+      "description": "A curated learning path for beginners in web development",
+      "materials": [
+        {
+          "name": "freeCodeCamp Web Development",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/"
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn"
+        },
+        {
+          "name": "The Odin Project",
+          "url": "https://www.theodinproject.com/"
+        }
+      ],
+      "created_at": "2024-12-19T19:21:53.413600"
+    },
+    "14": {
+      "name": "Mobile Apps for Beginners",
+      "description": "A curated learning path for beginners in mobile apps",
+      "materials": [
+        {
+          "name": "Android Developer Fundamentals",
+          "url": "https://developer.android.com/courses"
+        },
+        {
+          "name": "iOS App Development with Swift",
+          "url": "https://developer.apple.com/tutorials/swiftui"
+        },
+        {
+          "name": "React Native Tutorial",
+          "url": "https://reactnative.dev/docs/tutorial"
+        }
+      ],
+      "created_at": "2024-12-19T22:28:17.974541"
+    },
+    "15": {
+      "name": "Web Development for Beginners",
+      "description": "A curated learning path for beginners in web development",
+      "materials": [
+        {
+          "name": "freeCodeCamp Web Development",
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design/"
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn"
+        },
+        {
+          "name": "The Odin Project",
+          "url": "https://www.theodinproject.com/"
+        }
+      ],
+      "created_at": "2024-12-19T22:33:45.074527"
+    },
+    "16": {
+      "name": "Data Science for Beginners",
+      "description": "A curated learning path for beginners in data science",
+      "materials": [
+        {
+          "name": "Coursera Python for Everybody",
+          "url": "https://www.coursera.org/specializations/python"
+        },
+        {
+          "name": "DataCamp Introduction to Python",
+          "url": "https://www.datacamp.com/courses/intro-to-python-for-data-science"
+        }
+      ],
+      "created_at": "2024-12-19T22:36:49.388033"
+    }
+  },
+  "enrollments": {}
+}
