@@ -29,6 +29,7 @@
             border-radius: 8px;
             padding: 10px;
             margin-bottom: 10px;
+            word-wrap: break-word;  /* Ensure long words break and don't overflow */
         }
         #user-message {
             width: 80%;
@@ -69,10 +70,22 @@
     </div>
 
     <script>
+        // Send message to bot and get response
         async function sendMessage() {
             const message = document.getElementById('user-message').value;
             if (!message.trim()) return; // Prevent empty messages
             
+            const chatContainer = document.getElementById('chat-container');
+            chatContainer.innerHTML += `<p><b>You:</b> ${message}</p>`;
+
+            // Show loading indicator
+            chatContainer.innerHTML += `<p><b>Bot:</b> ...Loading...</p>`;
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            // Clear input field right after sending
+            document.getElementById('user-message').value = '';
+
+            // Send message to backend (Flask or other server) and get response
             const response = await fetch('/chat', {
                 method: 'POST',
                 headers: {
@@ -82,19 +95,20 @@
             });
 
             const data = await response.json();
-            const chatContainer = document.getElementById('chat-container');
 
-            // Append user and bot messages
-            chatContainer.innerHTML += `<p><b>You:</b> ${message}</p>`;
-            chatContainer.innerHTML += `<p><b>Bot:</b> ${data.response}</p>`;
+            // Replace loading message with actual response
+            const lastBotMessage = chatContainer.querySelector('p:last-child');
+            lastBotMessage.innerHTML = `<b>Bot:</b> ${data.response}`;
 
-            // Clear input field
-            document.getElementById('user-message').value = '';
+            // Use SpeechSynthesis to read out the bot response
+            const speech = new SpeechSynthesisUtterance(data.response);
+            window.speechSynthesis.speak(speech);
 
             // Scroll to the bottom
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
+        // Speech recognition functionality
         function startSpeechRecognition() {
             const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
             recognition.lang = 'en-US';
@@ -110,6 +124,14 @@
                 alert('Speech recognition failed. Please try again.');
             };
         }
+
+        // Allow sending messages with the "Enter" key
+        document.getElementById('user-message').addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent the default action (e.g., newline)
+                sendMessage(); // Trigger sendMessage
+            }
+        });
     </script>
 </body>
 </html>
