@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Assistant Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #333;
+        }
+        #chat-container {
+            width: 80%;
+            max-width: 500px;
+            height: 400px;
+            overflow-y: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #user-message {
+            width: 80%;
+            max-width: 500px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            margin: 5px 0;
+        }
+        b {
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to the Learning Assistant Chatbot</h1>
     <div id="chat-container"></div>
     <textarea id="user-message" placeholder="Type your message here..."></textarea>
     <button onclick="sendMessage()">Send</button>
+
     <script>
         async function sendMessage() {
             const message = document.getElementById('user-message').value;
@@ -18,10 +74,19 @@
                 },
                 body: JSON.stringify({ message })
             });
+
             const data = await response.json();
             const chatContainer = document.getElementById('chat-container');
+
+            // Append user and bot messages
             chatContainer.innerHTML += `<p><b>You:</b> ${message}</p>`;
             chatContainer.innerHTML += `<p><b>Bot:</b> ${data.response}</p>`;
+            
+            // Clear input field
+            document.getElementById('user-message').value = '';
+            
+            // Scroll to the bottom
+            chatContainer.scrollTop = chatContainer.scrollHeight;
         }
     </script>
 </body>
