@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Assistant Chatbot</title>
+</head>
+<body>
+    <h1>Welcome to the Learning Assistant Chatbot</h1>
+    <div id="chat-container"></div>
+    <textarea id="user-message" placeholder="Type your message here..."></textarea>
+    <button onclick="sendMessage()">Send</button>
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById('user-message').value;
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message })
+            });
+            const data = await response.json();
+            const chatContainer = document.getElementById('chat-container');
+            chatContainer.innerHTML += `<p><b>You:</b> ${message}</p>`;
+            chatContainer.innerHTML += `<p><b>Bot:</b> ${data.response}</p>`;
+        }
+    </script>
+</body>
+</html>
